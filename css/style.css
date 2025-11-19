@@ -21,3 +21,69 @@
 
 
 .text-box img { max-width: 100%; display: block; }
+
+.schedule {
+  display: flex;
+  gap: 20px;
+  font-family: Arial;
+}
+
+.day {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 150px;
+  border-radius: 8px;
+}
+
+
+.day li:first-child {
+  color: red;
+}
+
+
+.day li:last-child {
+  color: blue;
+}
+
+
+.day li:nth-child(2) {
+  font-weight: bold;
+}
+
+
+.day:nth-of-type(3) {
+  background: #f0ffe0;
+}
+
+
+.day li:not(:first-child) {
+  margin-top: 5px;
+}
+
+
+
+
+.day li:hover {
+  background: yellow;
+  cursor: pointer;
+}
+
+
+.day li:active {
+  transform: scale(0.95);
+}
+
+
+.day li:focus {
+  outline: 2px solid black;
+}
+
+
+.day li:visited {
+  color: purple;
+}
+
+input:checked + li {
+  background: lightgreen;
+}
